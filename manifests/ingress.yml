@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+    name: "borak8s-1626"
+    labels:
+        app: "borak8s-1626"
+    annotations:
+        kubernetes.io/ingress.class: addon-http-application-routing
+spec:
+    rules:
+        - host: borakssssssssssss-borak8s-1626.50d06d3bea9c4f7fb7d8.westeurope.aksapp.io
+          http:
+            paths:
+            - path: /
+              backend:
+                serviceName: "borak8s-1626"
+                servicePort: 80
